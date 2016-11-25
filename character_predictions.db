@@ -2,7 +2,7 @@ create table pokemon(
     S_No serial not null,
     actual int not null,
     pred int not null,
-    alive float not null,
+    alive decimal not null,
     plod varchar(255) not null,
     name varchar(255) not null,
     title varchar(255),
@@ -30,7 +30,7 @@ create table pokemon(
     numDeadRelations int not null,
     boolDeadRelations int not null,
     isPopular int not null,
-    popularity float not null,
+    popularity decimal not null,
     isAlive int not null,
     primary key(S_No)
 );

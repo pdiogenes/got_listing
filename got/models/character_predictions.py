@@ -6,7 +6,7 @@ class (db.Model):
     S_No = Column(Integer, primary_key=True)
     actual = Column(Integer)
     pred = Column(Integer)
-    alive = Column(String)
+    alive = Column(Decimal)
     plod = Column(String)
     name = Column(String)
     title = Column(String)
@@ -34,21 +34,40 @@ class (db.Model):
     numDeadRelations = Column(Integer)
     boolDeadRelations = Column(Integer)
     isPopular = Column(Integer)
-    popularity = Column(Integer)
+    popularity = Column(Decimal)
     isAlive = Column(Integer)
     
     def __iter__(self):
-        yield 'id', self.id
-        yield 'num', self.num
-        yield 'name', self.name
-        yield 'type1', self.type1
-        yield 'type2', self.type2
-        yield 'total', self.total
-        yield 'hp', self.hp
-        yield 'attack', self.attack
-        yield 'defense', self.defense
-        yield 'sp_atk', self.sp_atk
-        yield 'sp_def', self.sp_def
-        yield 'speed', self.speed
-        yield 'generation', self.generation
-        yield 'legendary', self.legendary
+    yield 'S_No', self.S_No
+    yield 'actual' , self.actual
+    yield 'pred' , self.pred
+    yield 'alive', self.alive
+    yield 'plod', self.plod
+    yield 'name', self.name
+    yield 'title', self.title
+    yield 'male', self.male
+    yield 'culture', self.culture
+    yield 'dateOfBirth' , self.dateOfBirth
+    yield 'DateoFdeath' , self.DateoFdeath
+    yield 'mother', self.mother
+    yield 'father', self.father
+    yield 'heir', self.heir
+    yield 'house', self.house
+    yield 'spouse', self.spouse
+    yield 'book1' , self.book1
+    yield 'book2' , self.book2
+    yield 'book3' , self.book3
+    yield 'book4' , self.book4
+    yield 'book5' , self.book5
+    yield 'isAliveMother' , self.isAliveMother
+    yield 'isAliveFather' , self.isAliveFather
+    yield 'isAliveHeir' , self.isAliveHeir
+    yield 'isAliveSpouse' , self.isAliveSpouse
+    yield 'isMarried' , self.isMarried
+    yield 'isNoble' , self.isNoble
+    yield 'age' , self.age
+    yield 'numDeadRelations' , self.numDeadRelations
+    yield 'boolDeadRelations' , self.boolDeadRelations
+    yield 'isPopular' , self.isPopular
+    yield 'popularity' , self.popularity
+    yield 'isAlive' , self.isAlive
