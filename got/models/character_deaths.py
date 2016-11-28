@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String, Boolean
-
+from got import db
 
 class CharacterDeaths(db.Model):
 	id = Column(Integer, primary_key=True)

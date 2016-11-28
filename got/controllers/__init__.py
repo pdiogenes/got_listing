@@ -1,0 +1,3 @@
+from got.controllers.battles_controller import blueprint as battles
+from got.controllers.character_deaths_controller import blueprint as character_deaths
+from got.controllers.character_predictions_controller import blueprint as character_predictions
