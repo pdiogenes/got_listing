@@ -7,5 +7,5 @@ blueprint = Blueprint('got_controller', __name__, url_prefix='/battles')
 
 @blueprint.route("/json")
 def list():
-    characters = db.session.query(CharacterDeaths).all()
-    return jsonify(characters=[dict(character_deaths) for character_deaths in characters])
+    characters = db.session.query(Battles).all()
+    return jsonify(characters=[dict(battles) for battles in characters])
