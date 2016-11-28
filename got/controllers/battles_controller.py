@@ -1,6 +1,6 @@
-from flask import jsonify, render_template, Blueprint
+ from flask import jsonify, render_template, Blueprint
 from got import db
-from got.models import Battles #import do modelo
+from got.models import Battles
 
 
 blueprint = Blueprint('got_controller', __name__, url_prefix='/battles')
