@@ -1,6 +1,6 @@
 from flask import render_template
 from got import app
-from got.controllers import battles, character_deaths, character_predictions
+from got.controllers import battles_controller, character_deaths_controller, character_predictions_controller
 
 app.register_blueprint(got)
 app.register_blueprint(home)

@@ -1,5 +1,5 @@
 from sqlalchemy import Column, Integer, String, Boolean
-from pokedex import db
+from got import db
 
 class Battles(db.Model):
 	id = Column(Integer, primary_key=True)
